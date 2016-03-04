@@ -1,2 +1,14 @@
-# commands
-Useful command doing stuff.
+
+
+Mysql
+-----
+
+
+* Dump database schema
+```
+mysqldump --no-data databaseName > /tmp/
+```
+
+
+Command line
+------------
