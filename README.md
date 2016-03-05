@@ -8,7 +8,11 @@ Mysql
 ```
 mysqldump --no-data databaseName > /tmp/
 ```
-
+* Import database schema
+```
+use DATABASE_NAME;
+source path/to/file.sql;
+```
 
 Command line
 ------------
