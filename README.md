@@ -6,12 +6,12 @@ Mysql
 
 * Dump database schema
 ```
-mysqldump --no-data databaseName > /tmp/
+mysqldump -u root -ptmppassword --no-data databaseName > /tmp/databaseName.sql
 ```
 * Import database schema
 ```
-use DATABASE_NAME;
-source path/to/file.sql;
+use databaseName;
+source /tmp/databaseName.sql;
 ```
 
 Command line
