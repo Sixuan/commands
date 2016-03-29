@@ -26,3 +26,7 @@ scp sliu@expample.com:/tmp/file.txt /home/sliu/
 ```
 sudo scp -i ~/.ssh/sshKeyFile /home/sliu/Downloads/mysql-connector-java-5.1.38.jar ubuntu@api.exaple.com:/tmp
 ```
+* Count string occurances. -o will only output the matches, ignoring lines; wc can count them:
+```
+grep -o 'needle' file | wc -l
+```
