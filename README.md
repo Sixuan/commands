@@ -30,3 +30,21 @@ sudo scp -i ~/.ssh/sshKeyFile /home/sliu/Downloads/mysql-connector-java-5.1.38.j
 ```
 grep -o 'needle' file | wc -l
 ```
+
+Elastic Search
+--------------
+
+* Check if an index exist
+```
+curl -XHEAD -i "ElasticSearch-host:9200/{index_name}"
+```
+
+* Create an index
+```
+curl -XPUT "ElasticSearch-host:9200/{index_name}"
+```
+
+* Check if a document is indexed
+```
+curl -XGET "ElasticSearch-host:9200/{index_name}/{type}/{id}"
+```
