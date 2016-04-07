@@ -13,6 +13,11 @@ mysqldump -u root -ptmppassword --no-data databaseName > /tmp/databaseName.sql
 use databaseName;
 source /tmp/databaseName.sql;
 ```
+* Check top table size, index size in database.
+```
+SELECT concat(table_schema,'.',table_name) tables, concat(round(table_rows/1000000,2),'M') rows, concat(round(data_length/(1024*1024*1024),2),'G') data_size, concat(round(index_length/(1024*1024*1024),2),'G') index_size, concat(round((data_length+index_length)/(1024*1024*1024),2),'G') total_size, round(index_length/data_length,2) index_data_ratio FROM information_schema.TABLES ORDER BY total_size DESC LIMIT 20;
+
+```
 
 Command line
 ------------
