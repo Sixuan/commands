@@ -7,7 +7,9 @@ Mysql
 * Dump database schema
 ```
 mysqldump -u root -ptmppassword --no-data databaseName > /tmp/databaseName.sql
+mysqldump -u <db_username> -h <db_host> -p db_name table_name > table_name.sql (Single table)
 ```
+
 * Import database schema
 ```
 use databaseName;
