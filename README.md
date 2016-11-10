@@ -4,7 +4,7 @@ Mysql
 -----
 
 
-* Dump database schema
+* Dump database schema or table
 ```
 mysqldump -u <db_username> -p -h <db_host> --no-data databaseName > /tmp/databaseName.sql
 mysqldump -u <db_username> -p -h <db_host> databaseName --table table_name --where "name = <some_value>" > table_name.sql (Single table)
