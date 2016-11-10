@@ -42,6 +42,14 @@ sudo scp -i ~/.ssh/sshKeyFile /home/sliu/Downloads/mysql-connector-java-5.1.38.j
 grep -o 'needle' file | wc -l
 ```
 
+Other useful tips
+------------
+
+* Concatenate on excel
+```
+=CONCATENATE("insert into oauth_client_grants (`client_id`,`grant_id`) values('",A2,"', 3);")
+```
+
 Elastic Search
 --------------
 
